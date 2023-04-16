@@ -14,21 +14,33 @@
 </p>
 
 
-## Tech Stack & Open-Source Libraries
-- Architectures & Components
-  - MVVM Architecture (Model - View - ViewModel)
-  - Repository Pattern
-  - ViewModel - Allows data to survive configuration changes such as screen rotations.
-  - LiveData - An observable data holder class.
-  - ViewBinding - A feature that allows you to more easily write code that interacts with views.
+## Fonctionnalités
+  - Affichage de la liste de tous les Pokémons avec leurs images et noms
+  - Affichage des détails de chaque Pokémon, y compris son nom, numéro, taille, poids, type, etc.
+  - Visualisation de l'image de chaque Pokémon
+  - Stockage des Pokémons favoris de l'utilisateur dans une base de données locale SQLite
+  - Utilisation d'une couleur de fond aléatoire pour chaque Pokémon pour améliorer l'expérience utilisateur
   - SwipeRefreshLayout - Implement the swipe-to-refresh UI pattern.
-- The Room persistence - Provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
-- [Retrofit2 & OkHttp3](https://github.com/square/retrofit) - A type-safe HTTP client for Android and the JVM.
-- [Dagger](https://github.com/google/dagger) - A fast dependency injector for Android and Java.
-- [Glide](https://github.com/bumptech/glide), [GlidePalette](https://github.com/florent37/GlidePalette) - Loading images from network.
-- [Material-Components](https://github.com/material-components/material-components-android) - Material design components for building CardView.
-- [ProgressView](https://github.com/skydoves/progressview) - A polished and flexible ProgressView, fully customizable with animations.
 
+## Technologies utilisées
+  - Architecture MVVM pour séparer les préoccupations et rendre l'application facile à maintenir
+  - Retrofit pour la gestion des appels d'API et la récupération de données depuis l'API Pokeapi
+  - Gson pour la conversion des données JSON récupérées en objets Java
+  - Glide pour le chargement et l'affichage des images de Pokemon
+  - RecyclerView pour l'affichage de la liste de Pokemon avec leurs images et leurs noms
+  - SQLite pour stocker les Pokemons favoris de l'utilisateur dans une base de données locale
+  - Java pour le langage de programmation
+  - Android Studio pour l'environnement de développement
+  - Git pour le système de gestion de versions
+  
+ ## API Pokeapi
+ 
+ L'application utilise l'API Pokeapi pour récupérer les informations sur les Pokémons. Pokeapi a été choisi pour sa grande fiabilité, sa facilité d'utilisation et la richesse de ses données sur les Pokémons. L'API fournit une source de données complète et à jour sur les différents Pokémons, y compris leurs noms, images, poids et hauteurs. Elle est facilement accessible via des appels HTTP RESTful et fournit des données au format JSON, qui peuvent être facilement converties en objets Java utilisables dans l'application.
+ 
+ ## Bibliothèques externes
+ 
+ L'application utilise également plusieurs bibliothèques externes telles que Retrofit pour effectuer les appels API, Glide pour afficher les images, et RecyclerView pour afficher la liste des Pokémons. Ces bibliothèques ont été choisies pour leur fiabilité, leur facilité d'utilisation et leur capacité à améliorer l'expérience utilisateur.
+ 
 ## Architecture
 Pokedex-AR is based on MVVM architecture and a repository pattern.
 
